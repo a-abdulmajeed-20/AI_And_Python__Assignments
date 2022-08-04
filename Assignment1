@@ -1,0 +1,135 @@
+# Assignment 1
+
+## Test your knowledge. 
+
+** Answer the following questions **
+
+## Strings
+
+Given the string 'hello' give an index command that returns 'e'. Enter your code in the cell below:
+
+s = 'hello'
+# Print out 'e' using indexing
+print(s[1])
+
+Reverse the string 'hello' using slicing:
+
+s ='hello'
+# Reverse the string using slicing
+print(s[-1::-1])
+
+
+Given the string hello, give two methods of producing the letter 'o' using indexing.
+
+s ='hello'
+# Print out the 'o'
+
+# Method 1:
+print(s[-1])
+
+
+# Method 2:
+print(s[4])
+
+## Lists
+
+Build this list [0,0,0] two separate ways.
+
+# Method 1:
+list0 = [0,0,0]
+list0
+
+# Method 2:
+tuple0 = (0, 0, 0)
+tuple0
+
+Reassign 'hello' in this nested list to say 'goodbye' instead:
+
+list3 = [1,2,[3,4,'hello']]
+list2 = list3[2]
+list2[2] = 'goodbye'
+list3[2]= list2
+
+list3
+
+Sort the list below:
+
+list4 = [5,3,4,6,1]
+list4.sort()
+list4
+
+## Dictionaries
+
+Using keys and indexing, grab the 'hello' from the following dictionaries:
+
+d = {'simple_key':'hello'}
+# Grab 'hello'
+print(d['simple_key'])
+
+d = {'k1':{'k2':'hello'}}
+# Grab 'hello'
+print(d['k1']['k2'])
+
+d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+
+#Grab hello
+# k1 = [ {'nest_key':['this is deep',['hello']]} ] #list
+# k1[0] = {'nest_key':['this is deep',['hello']]}  #diction
+# nest_key = [ 'this is deep',['hello'] ]
+# nest_key[1]
+
+print (d['k1'][0]['nest_key'][1][0])
+
+d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
+#Grab hello
+print(d['k1'][2]['k2'][1]['tough'][2][0])
+
+
+
+
+
+
+
+
+
+** Given the variables:**
+
+    planet = "Earth"
+    diameter = 12742
+
+** Use .format() to print the following string: **
+
+    The diameter of Earth is 12742 kilometers.
+
+planet = "Earth"
+diameter = 12742
+print('The diameter of {} is {} kilometers'.format(planet, diameter))
+
+
+** Given this nested list, use indexing to grab the word "hello" **
+
+lst = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
+print(lst[3][1][2][0])
+
+
+
+** Given this nested dictionary grab the word "hello". **
+
+d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}
+
+print(d['k1'][3]['tricky'][3]['target'][3])
+
+
+
+
+### Write a Python program to swap two variables.
+
+
+x = 5
+y = 6
+z =x
+x = y
+y = z
+print(x,y)
+
+## Thanks
